@@ -18,4 +18,9 @@ public class ProdutoController {
         model.addAttribute("produtos", produtoRepo.findAll());
         return "/produto/list";
     }
+
+    @RequestMapping("/insert")
+    public String insert(){
+        return "/produto/insert";
+    }
 }
